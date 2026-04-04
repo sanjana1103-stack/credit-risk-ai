@@ -1,0 +1,8 @@
+models/*.pkl
+models/metrics.json
+data/*.csv
+__pycache__/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+*.pyc
+.env
