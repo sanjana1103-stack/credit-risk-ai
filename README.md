@@ -54,7 +54,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. Add the dataset
-Download the Loan Default dataset from Kaggle and save it to:
+Download the Loan Default dataset from Kaggle and save it to:(link:https://www.kaggle.com/datasets/nikhil1e9/loan-default)
 ```
 data/Loan_default.csv
 ```
@@ -93,11 +93,12 @@ streamlit run app.py
 
 ## 🧠 Approximate Model Performance
 
-| Model | AUC-ROC | Avg Precision |
-|---|---|---|
-| Logistic Regression | ~0.72 | ~0.40 |
-| Random Forest | ~0.89 | ~0.62 |
-| XGBoost | ~0.91 | ~0.65 |
+| Model               | AUC-ROC | Avg Precision |
+| ------------------- | ------- | ------------- |
+| Logistic Regression | ~0.74   | ~0.29         |
+| Random Forest       | ~0.73   | ~0.30         |
+| XGBoost             | ~0.73   | ~0.31         |
+
 
 Exact values are stored in `models/metrics.json` after training and displayed live in the app's **Model Metrics** tab.
 
