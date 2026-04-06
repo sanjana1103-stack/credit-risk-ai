@@ -54,7 +54,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. Add the dataset
-Download the Loan Default dataset from Kaggle and save it to:(link:https://www.kaggle.com/datasets/nikhil1e9/loan-default)
+Download the Loan Default dataset from Kaggle and save it to:
 ```
 data/Loan_default.csv
 ```
@@ -85,7 +85,7 @@ streamlit run app.py
 
 ## 📊 Dataset
 
-- **Source:** [Loan Default Prediction — Kaggle](https://www.kaggle.com/)
+- **Source:** [Loan Default Prediction — Kaggle](https://www.kaggle.com/datasets/nikhil1e9/loan-default)
 - **Size:** ~255,000 applicants
 - **Target:** `Default` (0 = no default, 1 = default)
 
