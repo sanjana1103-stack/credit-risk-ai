@@ -7,60 +7,13 @@ A professional, end-to-end machine learning project for predicting loan default 
 
 ## 🏗️ Architecture Diagram
 
-```mermaid
-graph TD
-    A[User Inputs Applicant Data] --> B[Streamlit Web App]
-    B --> C[Preprocessing (Feature Encoding)]
-    C --> D[Model Prediction (Logistic Regression, Random Forest, XGBoost)]
-    D --> E[SHAP Explanation]
-    D --> F[Risk Score Output]
-    E --> G[Explainable Visualization]
-    F --> G
-    G --> H[User Sees Risk & Explanation]
-```
+![Architecture Diagram](docs/architecture.png)
 
 ---
 
 ## 🔄 Project Flow Diagram
 
-```mermaid
-flowchart TD
-    subgraph Data Preparation
-        A1[Raw Loan Data (CSV)]
-        A2[Preprocessing (src/preprocessing.py)]
-        A1 --> A2
-    end
-    subgraph Model Training
-        B1[train.py]
-        B2[Logistic Regression]
-        B3[Random Forest]
-        B4[XGBoost]
-        A2 --> B1
-        B1 --> B2
-        B1 --> B3
-        B1 --> B4
-        B2 --> C1[lr_model.pkl]
-        B3 --> C2[rf_model.pkl]
-        B4 --> C3[xgb_model.pkl]
-        B1 --> C4[metrics.json]
-    end
-    subgraph Web App
-        D1[app.py (Streamlit)]
-        D2[User Inputs]
-        D3[Model Prediction]
-        D4[SHAP Explanation]
-        D5[Risk Score Output]
-        D2 --> D1
-        D1 --> D3
-        D3 --> D4
-        D3 --> D5
-        D4 --> D5
-    end
-    C1 --> D1
-    C2 --> D1
-    C3 --> D1
-    C4 --> D1
-```
+![Project Flow Diagram](docs/flow.png)
 
 ---
 
